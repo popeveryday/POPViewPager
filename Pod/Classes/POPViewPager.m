@@ -131,11 +131,7 @@
     NSInteger lastIndex = _currentPageIndex;
     _currentPageIndex = index;
     
-    [UIView animateWithDuration:0.25 animations:^{
-        CGRect frame = self.barIndicatorView.frame;
-        frame.origin.x = index * (GC_ScreenWidth/self.pageDataSource.count);
-        self.barIndicatorView.frame = frame;
-    } completion:^(BOOL finished) {
+    void (^success)(BOOL finished) = ^void(BOOL finished){
         if(!finished) return;
         if (self.popViewPagerDelegate && [self.popViewPagerDelegate respondsToSelector:@selector(popViewPagerReturnPageIconAtIndex:)] && [self.popViewPagerDelegate respondsToSelector:@selector(popViewPagerReturnPageSelectedIconAtIndex:)])
         {
@@ -162,7 +158,22 @@
             }
         }
         
-    }];
+        if (self.popViewPagerDelegate && [self.popViewPagerDelegate respondsToSelector:@selector(popViewPagerDidPageChangedWithIndex:)])
+        {
+            [self.popViewPagerDelegate popViewPagerDidPageChangedWithIndex:_currentPageIndex];
+        }
+    };
+    
+    if (lastIndex == -1) {
+        success(YES);
+        return;
+    }
+    
+    [UIView animateWithDuration:0.25 animations:^{
+        CGRect frame = self.barIndicatorView.frame;
+        frame.origin.x = index * (GC_ScreenWidth/self.pageDataSource.count);
+        self.barIndicatorView.frame = frame;
+    } completion: success];
     
     
 }

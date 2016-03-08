@@ -11,6 +11,7 @@
 
 @protocol POPViewPagerDelegate <NSObject>
 
+-(void) popViewPagerDidPageChangedWithIndex:(NSInteger)pageIndex;
 -(NSArray*) popViewPagerReturnDatasource;
 -(NSString*) popViewPagerReturnPageTileAtIndex:(NSInteger)pageIndex;
 @optional

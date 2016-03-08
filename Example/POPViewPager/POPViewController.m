@@ -37,6 +37,10 @@
     return [NSString stringWithFormat:@"Page %02d", pageIndex];
 }
 
+-(void) popViewPagerDidPageChangedWithIndex:(NSInteger)pageIndex{
+    
+}
+
 //-(UIImage*) popViewPagerReturnPageIconAtIndex:(NSInteger)pageIndex{
 //    return [UIImage imageNamed:@"more"];
 //}
