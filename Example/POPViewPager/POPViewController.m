@@ -7,8 +7,9 @@
 //
 
 #import "POPViewController.h"
+#import "DetailTableVC.h"
 
-@interface POPViewController ()
+@interface POPViewController ()<POPViewPagerDelegate>
 
 @end
 
@@ -17,7 +18,8 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-	// Do any additional setup after loading the view, typically from a nib.
+
+    self.popViewPagerDelegate = self;
 }
 
 - (void)didReceiveMemoryWarning
@@ -25,5 +27,22 @@
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
+
+#pragma POPViewPager delegate
+-(NSArray *)popViewPagerReturnDatasource{
+    return @[[DetailTableVC new],[DetailTableVC new],[DetailTableVC new],[DetailTableVC new]];
+}
+
+-(NSString *)popViewPagerReturnPageTileAtIndex:(NSInteger)pageIndex{
+    return [NSString stringWithFormat:@"Page %02d", pageIndex];
+}
+
+//-(UIImage*) popViewPagerReturnPageIconAtIndex:(NSInteger)pageIndex{
+//    return [UIImage imageNamed:@"more"];
+//}
+//
+//-(UIImage*) popViewPagerReturnPageSelectedIconAtIndex:(NSInteger)pageIndex{
+//    return [UIImage imageNamed:@"rate"];
+//}
 
 @end

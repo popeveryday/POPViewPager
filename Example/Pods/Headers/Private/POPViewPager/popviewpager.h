@@ -28,10 +28,4 @@
 
 @interface POPViewPager : UIPageViewController
 
-@property (nonatomic, readonly) NSArray* pageDataSource;
-@property (nonatomic, readonly) UIScrollView* buttonBarScrollView;
-@property (nonatomic, readonly) UIView* barIndicatorView;
-@property (nonatomic, readonly) NSInteger currentPageIndex;
-@property (nonatomic, weak) id<POPViewPagerDelegate> popViewPagerDelegate;
-
 @end

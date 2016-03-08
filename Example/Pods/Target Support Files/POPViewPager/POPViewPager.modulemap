@@ -1,0 +1,6 @@
+framework module POPViewPager {
+  umbrella header "POPViewPager-umbrella.h"
+
+  export *
+  module * { export * }
+}

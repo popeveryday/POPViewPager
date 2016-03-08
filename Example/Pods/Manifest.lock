@@ -1,0 +1,20 @@
+PODS:
+  - MBProgressHUD (0.9.2)
+  - POPLib (0.1.64):
+    - MBProgressHUD (~> 0.9)
+  - POPViewPager (0.1.0):
+    - POPLib (~> 0.1)
+
+DEPENDENCIES:
+  - POPViewPager (from `../`)
+
+EXTERNAL SOURCES:
+  POPViewPager:
+    :path: ../
+
+SPEC CHECKSUMS:
+  MBProgressHUD: 1569cf7ace17a8bac47aabfbb8580a49690386d1
+  POPLib: 3db9766fe51d44fd394a807b225828a923c70769
+  POPViewPager: 29b35097bb3bf14d69c52ea1c3e88b401661ea03
+
+COCOAPODS: 0.39.0

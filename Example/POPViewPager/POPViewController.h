@@ -7,7 +7,8 @@
 //
 
 @import UIKit;
+#import <POPViewPager/POPViewPager.h>
 
-@interface POPViewController : UIViewController
+@interface POPViewController : POPViewPager
 
 @end

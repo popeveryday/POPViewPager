@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		49CCEED637322AE0F0EEE1CB /* Pods_POPViewPager_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BDD6B4B5E57F12B4AEF08AD5 /* Pods_POPViewPager_Example.framework */; };
+		4E6C57901C8ED834000F4931 /* DetailTableVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E6C578F1C8ED834000F4931 /* DetailTableVC.m */; };
 		6003F58E195388D20070C39A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F58D195388D20070C39A /* Foundation.framework */; };
 		6003F590195388D20070C39A /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F58F195388D20070C39A /* CoreGraphics.framework */; };
 		6003F592195388D20070C39A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F591195388D20070C39A /* UIKit.framework */; };
@@ -40,6 +41,8 @@
 		12D612DC7941332B21790B8B /* Pods-POPViewPager_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-POPViewPager_Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-POPViewPager_Tests/Pods-POPViewPager_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		27C5CF49FE97E5B83322020E /* Pods-POPViewPager_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-POPViewPager_Example.release.xcconfig"; path = "Pods/Target Support Files/Pods-POPViewPager_Example/Pods-POPViewPager_Example.release.xcconfig"; sourceTree = "<group>"; };
 		367CD8871A95A05CCA48F687 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		4E6C578E1C8ED834000F4931 /* DetailTableVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DetailTableVC.h; sourceTree = "<group>"; };
+		4E6C578F1C8ED834000F4931 /* DetailTableVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DetailTableVC.m; sourceTree = "<group>"; };
 		5149DD049125F8ECA2CE7D60 /* Pods_POPViewPager_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_POPViewPager_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6003F58A195388D20070C39A /* POPViewPager_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = POPViewPager_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6003F58D195388D20070C39A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -135,6 +138,8 @@
 				873B8AEA1B1F5CCA007FD442 /* Main.storyboard */,
 				6003F5A5195388D20070C39A /* POPViewController.h */,
 				6003F5A6195388D20070C39A /* POPViewController.m */,
+				4E6C578E1C8ED834000F4931 /* DetailTableVC.h */,
+				4E6C578F1C8ED834000F4931 /* DetailTableVC.m */,
 				6003F5A8195388D20070C39A /* Images.xcassets */,
 				6003F594195388D20070C39A /* Supporting Files */,
 			);
@@ -392,6 +397,7 @@
 			files = (
 				6003F59E195388D20070C39A /* POPAppDelegate.m in Sources */,
 				6003F5A7195388D20070C39A /* POPViewController.m in Sources */,
+				4E6C57901C8ED834000F4931 /* DetailTableVC.m in Sources */,
 				6003F59A195388D20070C39A /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
