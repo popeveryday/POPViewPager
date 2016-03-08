@@ -144,20 +144,21 @@
             if(lastIndex == -1) return;
             [((UIButton*)[self.buttonBarScrollView viewWithTag:lastIndex+1000]) setImage:[self.popViewPagerDelegate popViewPagerReturnPageIconAtIndex:lastIndex] forState:UIControlStateNormal];
         }else{
+            
+            if(lastIndex > -1){
+                if (self.popViewPagerDelegate && [self.popViewPagerDelegate respondsToSelector:@selector(popViewPagerReturnCustomTitleColor)])
+                {
+                    [((UIButton*)[self.buttonBarScrollView viewWithTag:lastIndex+1000]) setTitleColor:[self.popViewPagerDelegate popViewPagerReturnCustomTitleColor] forState:UIControlStateNormal];
+                }else{
+                    [((UIButton*)[self.buttonBarScrollView viewWithTag:lastIndex+1000]) setTitleColor:[CommonLib colorFromHexString:@"5c0d09" alpha:1] forState:UIControlStateNormal];
+                }
+            }
+            
             if (self.popViewPagerDelegate && [self.popViewPagerDelegate respondsToSelector:@selector(popViewPagerReturnCustomSelectedTitleColor)])
             {
                 [((UIButton*)[self.buttonBarScrollView viewWithTag:index+1000]) setTitleColor:[self.popViewPagerDelegate popViewPagerReturnCustomSelectedTitleColor] forState:UIControlStateNormal];
             }else{
                 [((UIButton*)[self.buttonBarScrollView viewWithTag:index+1000]) setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
-            }
-            
-            if(lastIndex == -1) return;
-            
-            if (self.popViewPagerDelegate && [self.popViewPagerDelegate respondsToSelector:@selector(popViewPagerReturnCustomTitleColor)])
-            {
-                [((UIButton*)[self.buttonBarScrollView viewWithTag:lastIndex+1000]) setTitleColor:[self.popViewPagerDelegate popViewPagerReturnCustomTitleColor] forState:UIControlStateNormal];
-            }else{
-                [((UIButton*)[self.buttonBarScrollView viewWithTag:lastIndex+1000]) setTitleColor:[CommonLib colorFromHexString:@"5c0d09" alpha:1] forState:UIControlStateNormal];
             }
         }
         

@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
 s.name             = "POPViewPager"
-s.version          = "0.1.0"
+s.version          = "0.1.1"
 s.summary          = "POPViewPager is customable UIPageViewController with indicater tab bar for Object-c project."
 s.homepage         = "https://github.com/popeveryday/POPViewPager"
 s.license          = 'MIT'
