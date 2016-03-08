@@ -135,7 +135,7 @@
         if(!finished) return;
         if (self.popViewPagerDelegate && [self.popViewPagerDelegate respondsToSelector:@selector(popViewPagerReturnPageIconAtIndex:)] && [self.popViewPagerDelegate respondsToSelector:@selector(popViewPagerReturnPageSelectedIconAtIndex:)])
         {
-            [((UIButton*)[self.buttonBarScrollView viewWithTag:index+1000]) setImage:[self.popViewPagerDelegate popViewPagerReturnPageSelectedIconAtIndex:lastIndex] forState:UIControlStateNormal];
+            [((UIButton*)[self.buttonBarScrollView viewWithTag:index+1000]) setImage:[self.popViewPagerDelegate popViewPagerReturnPageSelectedIconAtIndex:index] forState:UIControlStateNormal];
             
             if(lastIndex == -1) return;
             [((UIButton*)[self.buttonBarScrollView viewWithTag:lastIndex+1000]) setImage:[self.popViewPagerDelegate popViewPagerReturnPageIconAtIndex:lastIndex] forState:UIControlStateNormal];
