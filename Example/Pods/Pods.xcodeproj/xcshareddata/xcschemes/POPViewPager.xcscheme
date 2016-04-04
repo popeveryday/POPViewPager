@@ -14,7 +14,7 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = 'primary'
-               BlueprintIdentifier = '16C189D84D196B3A57E631E4'
+               BlueprintIdentifier = 'A97E0A2556E6CFF9D865BB0F'
                BlueprintName = 'POPViewPager'
                ReferencedContainer = 'container:Pods.xcodeproj'
                BuildableName = 'POPViewPager.framework'>

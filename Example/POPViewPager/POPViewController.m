@@ -34,7 +34,7 @@
 }
 
 -(NSString *)popViewPagerReturnPageTileAtIndex:(NSInteger)pageIndex{
-    return [NSString stringWithFormat:@"Page %02d", pageIndex];
+    return [NSString stringWithFormat:@"Page %02d", (int)pageIndex];
 }
 
 -(void) popViewPagerDidPageChangedWithIndex:(NSInteger)pageIndex{

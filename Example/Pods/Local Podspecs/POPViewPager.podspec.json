@@ -1,6 +1,6 @@
 {
   "name": "POPViewPager",
-  "version": "0.1.0",
+  "version": "0.1.12",
   "summary": "POPViewPager is customable UIPageViewController with indicater tab bar for Object-c project.",
   "homepage": "https://github.com/popeveryday/POPViewPager",
   "license": "MIT",
@@ -9,7 +9,7 @@
   },
   "source": {
     "git": "https://github.com/popeveryday/POPViewPager.git",
-    "tag": "0.1.0"
+    "tag": "0.1.12"
   },
   "platforms": {
     "ios": "7.1"
